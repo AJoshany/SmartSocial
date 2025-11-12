@@ -1,5 +1,6 @@
 <template>
   <main class="flex flex-col items-center">
+    <header-viewer/>
     <div class="container">
       <slot></slot>
     </div>
