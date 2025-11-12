@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import "./fonts.css";
+
+/* body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url("~/assets/img/main-bg1.png");
+  opacity: 0.4;
+} */
+
+/* Tailwind Setup */
+
+@theme {
+  --font-sans: "iranyekan";
+  --color-primary-100: #d3edee;
+  --color-primary-200: #c1e1e7;
+  --color-primary-300: #86c9cf;
+  --color-primary-400: #11999e;
+  --color-primary-500: #157b7f;
+  --color-primary-600: #195d60;
+
+  --color-bg-light: #e4f9f5;
+  --color-bg-dark: #212121;
+  --color-gray-text: #7a7a7a;
+  
+  --color-white: #ffffff;
+
+  --color-black-50: #f8f9fa;
+  --color-black-100: #e9ecef;
+  --color-black-200: #dee2e6;
+  --color-black-300: #ced4da;
+  --color-black-400: #adb5bd;
+  --color-black-500: #6c757d;
+  --color-black-600: #495057;
+  --color-black-700: #343a40;
+  --color-black-800: #212529;
+  --color-black-900: #000000;
+
+  --text-sm: 1.3rem;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  html {
+    direction: rtl;
+    font-size: 62.5%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-mainbg);
+  }
+}
